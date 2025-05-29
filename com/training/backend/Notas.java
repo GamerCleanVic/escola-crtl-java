@@ -22,6 +22,7 @@ public class Notas {
 	public double mediaDoAluno(double media) {
 		soma = n1 + n2 + n3 + n4 + trabalho + tarefa;
 		this.media = soma / 4.0;
-		return media;
+		setMedia(this.media);
+		return getMedia();
 	}
 }
