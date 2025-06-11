@@ -5,7 +5,8 @@ public class Pessoa {
 	private String sobrenome;
 	private int idade;
 	private String sexo;
-	private String login;
+	private String loginAluno;
+	private String loginProfessor;
 	private String senha;
 	private int id;
 	
@@ -28,33 +29,35 @@ public class Pessoa {
 	}
 	public void setIdade(int idade) {
 		this.idade = idade;
-	}
-	
+	}	
 	public String getSexo() {
 		return sexo;
 	}
 	public void setSexo(String sexo) {
 		this.sexo = sexo;
+	}	
+	public String getLoginAluno() {
+		return loginAluno;
 	}
-	
-	public String getLogin() {
-		return login;
+	public void setLoginAluno(String loginAluno) {
+		this.loginAluno = loginAluno;
 	}
-	public void setLogin(String login) {
-		this.login = login;
+	public String getLoginProfessor() {
+		return loginProfessor;
 	}
-	
+	public void setLoginProfessor(String loginProfessor) {
+		this.loginProfessor = loginProfessor;
+	}
 	public String getSenha() {
 		return senha;
 	}	
 	public void setSenha(String senha) {
 		this.senha = senha;
-	}
-	
+	}	
 	public int getId() {
 		return id;
 	}
 	public void setId(int id) {
 		this.id = id;
-	}	
+	}
 }
