@@ -31,12 +31,12 @@ public interface NotasInteface {
 	public void setN4(double n4);
 	public double getN4();
 	
-	public double somar();
+	public double somar(double n1, double n2, double n3, double n4);
 	
 	public void setMedia(double media);
 	public double getMedia();
 	
-	public double mediaDoAluno(double media);
+	public double mediaDoAluno();
 	
 	public double porQuantoFazerFinal();	
 	

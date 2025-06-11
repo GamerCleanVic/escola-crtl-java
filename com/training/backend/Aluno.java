@@ -95,21 +95,25 @@ public class Aluno extends Pessoa implements NotasInteface{
 	}
 	
 	@Override
-	public double somar(){
+	public double somar(double n1, double n2, double n3, double n4){
+		this.n1 = n1;
+		this.n2 = n2;
+		this.n3 = n3;
+		this.n4 = n4;
 		return (this.n1 + this.n2 + this.n3 + this.n4);
 	}
 	
 	@Override
-	public double mediaDoAluno(double media) {
-		this.soma = somar() + (this.trabalho + this.tarefa);
-		this.media = this.soma / 4.0;
-		setMedia(this.media);
+	public double mediaDoAluno() {
+		this.soma = somar(this.n1, this.n2, this.n3, this.n4) + (this.trabalho + this.tarefa);
+		double auxMedia = this.soma / 4;
+		setMedia(auxMedia);
 		return getMedia();
 	}
 	
 	@Override
 	public double porQuantoFazerFinal() {		
-		this.faltandoPraFinal = ((-getMedia())+10.0);
-		return this.faltandoPraFinal;
+		faltandoPraFinal = ((-getMedia())+10.0);
+		return faltandoPraFinal;
 	}
 }
